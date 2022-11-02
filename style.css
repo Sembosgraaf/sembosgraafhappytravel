@@ -1,0 +1,89 @@
+/* Responsive */
+@media only screen and (max-width: 600px){}
+@media only screen and (min-width: 600px){}
+@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 992px){}
+@media only screen and (min-width: 1200px){}
+
+
+*{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+
+
+}
+
+
+.banner{
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Banner.jpg);
+      background-size: cover;
+      background-position: center;
+}
+
+.navbar{
+      width: 85%;
+      margin: auto;
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.logo{
+     width: 120px;
+     cursor: pointer;
+}
+
+.navbar ul li{
+     list-style: none;
+     display: inline-block;
+     margin: 0 10px;
+     position: relative;
+}
+
+.navbar ul li a{
+     text-decoration: none;
+     color: #fff;
+     text-transform: uppercase;
+}
+.navbar ul li::after{
+     content: '';
+     height: 3px;
+     width: 0%;
+     background: #009688;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     transition: 1s;
+}
+
+.navbar ul li:hover::after{
+     width: 100%;
+}
+
+.content{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     color: #fff;
+}
+
+.content h1{
+     font-size: 50px;
+     margin-top: 60px;
+     font-family: sans-serif;
+}
+
+.hoi{
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(hoi.jpg);
+     background-size: cover;
+     background-position: center;
+}
+

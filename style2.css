@@ -1,0 +1,143 @@
+/* Responsive */
+@media only screen and (max-width: 600px){}
+@media only screen and (min-width: 600px){}
+@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 992px){}
+@media only screen and (min-width: 1200px){}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+
+}
+
+
+.hoi{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+   width: 120px;
+   cursor: pointer;
+}
+
+.navbar ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0 10px;
+   position: relative;
+}
+
+.navbar ul li a{
+   text-decoration: none;
+   color: #fff;
+   text-transform: uppercase;
+}
+.navbar ul li::after{
+   content: '';
+   height: 3px;
+   width: 0%;
+   background: #009688;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+   width: 100%;
+}
+
+.content{
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   text-align: center;
+   color: #fff;
+}
+
+.content h1{
+   font-size: 50px;
+   margin-top: 60px;
+   font-family: sans-serif;
+}
+
+.places{
+
+   display: flex;
+  
+   gap: 10px;
+   gap: 10px 20px; 
+   row-gap: 10px;
+   column-gap: 20px;
+}
+
+.containera{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .div-links {
+   border: 3px solid black;
+   margin-right: 20px;
+   margin-top: 40px;
+   height: 500px;
+   width: 500px;
+   background-color:darkslategray;
+}
+
+.div-rechts {
+   border: 3px solid black;
+   margin-left: 20px;
+   margin-top: 40px;
+   height: 500px;
+   width: 500px;
+   background-color:darkslategray;
+}
+
+#img1 {
+   display: block;
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#bannera{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(banner.jpg);
+  background-size: 150%;
+}
+
+p{
+   color: white;
+   text-align: center;
+}
+footer.footer {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    margin-top: -0.5vw;
+}
+
+h1.copyright {
+    text-align: center;
+    color: grey;
+    line-height: 40px;
+    font-size: 0.7em;
+}
